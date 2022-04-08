@@ -6,6 +6,16 @@
   --logo-web-color: #2196F3;
   --logo-studio-color: #000000;
 }
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+ul, ol {
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
 body {
   font-family: "Roboto", sans-serif;
   background-color: #FFFFFF;
@@ -16,6 +26,13 @@ body {
 }
 .link {
   text-decoration: none;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 .logo {
   font-family: 'Raleway',sans-serif;
@@ -45,6 +62,10 @@ body {
 
 /* -----header----- */
 
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .logo-web {
     color: var(--logo-web-color);
 }
@@ -88,14 +109,19 @@ body {
   /* -----hero----- */
 .hero {
   background-color: #2F303A;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
+  max-width: 696px;
+  margin: 0 auto 30px auto;  
 }
 .hero-btn {
   font-family: inherit;
@@ -104,32 +130,60 @@ body {
   line-height: 1.88;
   color: var(--first-btn-color);
   background-color: #2196F3;
+  display: block;
+  padding: 10px 32px;
+  margin: 0 auto;
+  
+}
 }
   .hero-btn:hover,
   .hero-btn:focus {
   background-color: #188CE8;
   cursor: pointer;
   }
+  
 
 /* -----advantage----- */
+
+.advantage {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantage-item {
+  border: 1px solid black;
+}
 .advantage-subtitle {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
+  margin-bottom: 10px;
 }
 .advantage-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  width: 270px;
 }
 
 /* -----about----- */
+.about-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about {
+  padding-bottom: 94px;
+}
 
 /* -----our team----- */
 .team {
   background-color: #F5F4FA;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.tea-title {
+  margin-bottom: 50px;
 }
 .team-subtitle {
   font-weight: 500;
@@ -137,16 +191,21 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-bottom: 30px;
 }
 
 /* -----footer----- */
 .footer {
   background-color: #2F303A;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-studio {
   color: #FFFFFF;
