@@ -163,9 +163,7 @@ body {
   border-radius: 4px;
   display: block;
   padding: 10px 32px;
-  margin: 0 auto;
-  
-}
+  margin: 0 auto;  
 }
   .hero-btn:hover,
   .hero-btn:focus {
